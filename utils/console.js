@@ -1,0 +1,8 @@
+const chalk = require('chalk');
+
+module.exports = {
+    info: (msg) => console.log(chalk.blue('ℹ️ [INFO]'), msg),
+    warn: (msg) => console.log(chalk.yellow('⚠️ [WARN]'), msg),
+    success: (msg) => console.log(chalk.green('✅ [SUCCESS]'), msg),
+    error: (msg, err = '') => console.log(chalk.red('❌ [ERROR]'), msg, err)
+};
